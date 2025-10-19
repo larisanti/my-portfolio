@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!-- Documento tipo HTML5 -->
+<html lang="pt-BR">
+<head>
+    <!-- Metadados e links para fontes/estilos -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Larissa de Santi - Portfólio</title>
+    
+    <!--  Fontes externas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Cabeçalho com navegação principal -->
+<header id="navbar">
+    <div class="container">
+        <h1>Larissa de Santi</h1>
+        <nav>
+            <!-- Links âncora para as 4 seções -->
+            <a href="#sobre">Sobre mim</a>
+            <a href="#formacao">Formação</a>
+            <a href="#portfolio">Portfólio</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- 1. Sobre Mim -->
+    <section id="sobre" class="section-padrao">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            
+            <div class="sobre-content">
+                <img src="images/profile.jpg" alt="Foto Larissa" class="profile-photo">
+                
+                <div>
+                    <p>Pós-graduada em Ciência de Dados e Inteligência Artificial e cursando Bacharelado em Engenharia de Software. Possuo experiência em pré-processamento e análise de dados, modelagem de banco de dados e desenvolvimento de software. Minhas principais habilidades técnicas são Python, SQL e Google Cloud Platform (GCP). Também, possuo formação e experiência na área de Letras Inglês e estou me aprofundando em Machine Learning e Processamento de Linguagem Natural (NLP).</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Formação -->
+    <section id="formacao" class="section-padrao bg-cinza">
+        <div class="container">
+            <h2>Formação</h2>
+            <ul>
+                <li><strong>Especialização em Ciência de Dados e Inteligência Artificial</strong>  UNINTER (Mar. 2025)</li>
+                <li><strong>Bacharelado em Engenharia de Software</strong>  UNINTER (Jul. 2028)</li>
+                <li><strong>Licenciatura em Letras Inglês</strong>  UTFPR (Dez. 2023)</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 3. Portfólio -->
+    <section id="portfolio" class="section-padrao">
+    <div class="container">
+        <h2>Portfólio</h2>
+        
+        <div class="projetos">
+            
+            <article class="projeto-item">
+                <div class="projeto-content">
+                    <div class="projeto-text">
+                        <h3>Banco de Dados e Integração de API para E-commerce</h3>
+                        <ul>
+                            <li>Modelei e implementei um banco de dados escalável para gestão de e-commerce.</li>
+                            <li>Desenvolvi consultas SQL para análise e extração de insights de dados transacionais.</li>
+                            <li>Criei API em Python para integração e orquestração de dados.</li>
+                        </ul>
+                        <a href="https://github.com/larisanti/restaurant-db" target="_blank" rel="noopener noreferrer">Acessar Repositório</a>
+                    </div>
+                    <img src="images/project-1.jpg" alt="Project 1" class="project-image">
+                </div>
+            </article>
+
+            <article class="projeto-item">
+                <div class="projeto-content">
+                    <div class="projeto-text">
+                        <h3>Análise Exploratória de Dados (EDA) para Modelagem Preditiva</h3>
+                        <ul>
+                            <li>Desenvolvi uma Análise Exploratória de Dados para compreender variáveis demográficas.</li>
+                            <li>Apliquei estatística descritiva, manipulação e transformação de dados utilizando Python (Pandas/Numpy) e criei visualizações (Matplotlib/Seaborn) para identificar outliers e tendências.</li>
+                        </ul>
+                        <a href="https://github.com/larisanti/california-housing-eda" target="_blank" rel="noopener noreferrer">Acessar Repositório</a>
+                    </div>
+                    <img src="images/project-2.jpg" alt="Project 2" class="project-image">
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+    <!-- 4. Contato -->
+    <section id="contato" class="section-padrao bg-cinza">
+        <div class="container">
+            <h2>Contato</h2>
+            <!-- Formulário script.js -->
+            <form id="form-contato">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <!-- Feedback após envio da mensagem -->
+            <p id="feedback-contato" style="display:none; margin-top: 20px; font-weight: bold;"></p>
+        </div>
+    </section>
+</main>
+
+<!-- Rodapé -->
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Larissa de Santi. Todos os direitos reservados.</p>
+    </div>
+</footer>
+
+<!-- Script que controla comportamento do formulário -->
+<script src="script.js"></script>
+</body>
+</html>
